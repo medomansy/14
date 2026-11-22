@@ -1,23 +1,63 @@
 <!DOCTYPE html>
-<html manifest="900.manifest">
+<html lang="ar" dir="rtl" manifest="900.manifest">
 <head>
-<title>PS4 [5.05] 7.00 - 14.02 FW GoldHEN Host by GamerHack</title>
+<meta charset="UTF-8">
+<title>تثبيت الكاش - المنسي لخدمات البلايستيشن والموبايل</title>
 <link rel="stylesheet" href="../style.css">
+<style>
+  .g2-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    text-align: center;
+  }
+  .g2-brand {
+    color: #fbbf24;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+  .g2-sub {
+    color: #cbd5e1;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  #msgs.g2-status {
+    font-size: 24px;
+    font-weight: 800;
+    color: #fbbf24;
+    margin: 28px 0 42px 0;
+    line-height: 1.4;
+  }
+  .g2-thanks {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-top: 16px;
+    direction: ltr;
+  }
+  .g2-thanks a {
+    color: #f87171;
+    margin: 0 8px;
+    text-decoration: none;
+  }
+</style>
 </head>
 <body>
+<div class="g2-wrap">
+  <div class="g2-brand">المنسي لخدمات البلايستيشن والموبايل</div>
+  <div class="g2-sub">GoldHEN Host (5.05 &amp; 7.00 - 14.02 FW) • م/ محمد المنسي</div>
+  <hr>
+  <h1 id="msgs" class="g2-status">جاري بدء تثبيت الكاش...</h1>
+  <h2 class="g2-thanks">Special Thanks to:<a href="https://twitter.com/_AlAzif">@_AlAzif</a>ChendoChap<a href="https://x.com/Kameleonre_">@Kameleonre_</a>SiSTR0 Abc</h2>
+</div>
 <script>
 history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
-function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
-function DisplayCacheProgress(){window.msgs.innerHTML="Cache Installed Successfully ✔";setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser ...";},1500);}
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="جاري تثبيت الكاش دون إنترنت: " + Percent + "%";}
+function DisplayCacheProgress(){window.msgs.innerHTML="تم تثبيت الكاش بنجاح ✔";setTimeout(function(){window.msgs.innerHTML="قم بإغلاق المتصفح وإعادة فتحه الآن ...";},1500);}
 window.applicationCache.addEventListener("progress",DLProgress,false);
 window.applicationCache.oncached=function(e){DisplayCacheProgress();};
 window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
-window.applicationCache.onerror=function(e){window.msgs.innerHTML="Error Installing Cache! - Clear and Re-Open Your Browser ...";};
+window.applicationCache.onerror=function(e){window.msgs.innerHTML="حدث خطأ أثناء تثبيت الكاش! - امسح بيانات المتصفح وأعد الفتح ...";};
 </script>
-<h1>PS4 [5.05] 7.00 - 14.02 FW GoldHEN Host by GamerHack</h1>
-<hr>
-<br>
-<h1 id=msgs style="font-size: 30px;margin-top: 77px;margin-bottom: 455px;">Starting Cache Installation...</h1>
-<h1 style="margin-top: 43px;">Special Thanks to:<a href="https://twitter.com/_AlAzif" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@_AlAzif</a>ChendoChap<a href="https://x.com/Kameleonre_" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@Kameleonre_</a>SiSTR0 Abc</h1>
 </body>
 </html>
