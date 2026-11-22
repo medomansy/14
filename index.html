@@ -1,80 +1,56 @@
 <!DOCTYPE html>
-<html><head>
-<title>PS4 Exploit Host by GamerHack</title>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>المنسي لخدمات البلايستيشن والموبايل</title>
 <link rel="stylesheet" href="style.css">
-<style>
-.gold-header {
-    display: inline-block;
-    margin: 18px auto 12px auto;
-    padding: 14px 32px;
-    background: linear-gradient(135deg, rgba(66, 45, 5, 0.94) 0%, rgba(155, 112, 15, 0.9) 50%, rgba(66, 45, 5, 0.94) 100%);
-    border: 1px solid rgba(255, 215, 0, 0.6);
-    border-radius: 16px;
-    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 245, 190, 0.35);
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-}
-
-.gold-header-title {
-    margin: 0;
-    font-size: 26px;
-    font-weight: bold;
-    color: #ffe680;
-}
-
-.gold-header-phone {
-    margin-top: 6px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff5cc;
-    letter-spacing: 0.5px;
-}
-
-.btn-multi {
-    background: linear-gradient(135deg, #d4af37 0%, #b8860b 55%, #8a6206 100%);
-    color: #fffdf5;
-    border: 1px solid rgba(255, 223, 100, 0.5);
-    box-shadow: 0 4px 14px rgba(184, 134, 11, 0.35);
-    font-weight: bold;
-}
-
-.btn-multi:hover {
-    background: linear-gradient(135deg, #e5c158 0%, #c99714 55%, #9c7008 100%);
-    box-shadow: 0 6px 18px rgba(212, 175, 55, 0.5);
-}
-
-.designer-bubble {
-    display: inline-block;
-    margin-top: 137px;
-    margin-bottom: 77px;
-    padding: 14px 30px;
-    background: linear-gradient(135deg, rgba(66, 45, 5, 0.92) 0%, rgba(145, 105, 14, 0.88) 55%, rgba(66, 45, 5, 0.92) 100%);
-    color: #fff3c4;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 215, 0, 0.5);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 245, 190, 0.3);
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
-}
-</style>
+<script>
+var histlength = history.length;
+history.go(-(histlength + 2));
+</script>
 </head>
 <body>
-<script>
-var histlength=history.length;history.go(-(histlength + 2));
-</script>
-<div class="gold-header">
-<div class="gold-header-title">محمد المنسي لخدمات البلايستيشن</div>
-<div class="gold-header-phone">01065670546</div>
-</div>
-<h1 id=msgs>PS4 Exploit Host by GamerHack</h1>
-<hr>
-<br>
-<div id=menu>
-<h1 style="font-size: 18px;color: #ffd700;">Select Your Firmware</h1>
-<button class="btn btn-multi" onmouseover="msgs.innerHTML='PS4 GoldHEN Host for 5.05 and 7.00 to 14.02 FW - (Auto Exploit Selection)'" onmouseout="msgs.innerHTML='PS4 Exploit Host by GamerHack'" onclick="location.replace('g2all/index.html')"> GoldHEN Multi FW </button>
-<br>
-<div class="designer-bubble">تم التصميم بواسطة المهندس محمد المنسي</div>
-<h1 style="margin-top: 78px;">Designed by:<a href="https://twitter.com/GamerHack93" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@GamerHack93</a>A special thanks to all the devs on the scene.</h1>
+<div class="page-wrapper">
+    <div class="main-layout">
+        <div class="host-card" id="menu">
+            <h2 class="card-subtitle" id="msgs">إصدارات السوفت المدعومة</h2>
+            <div class="fw-grid">
+                <span class="fw-pill">7.00 - 7.55</span>
+                <span class="fw-pill">8.00 - 8.52</span>
+                <span class="fw-pill">9.00 - 9.60</span>
+                <span class="fw-pill">10.00 - 10.71</span>
+                <span class="fw-pill">11.00 - 14.02</span>
+            </div>
+            <button class="activate-btn"
+                onmouseover="document.getElementById('msgs').innerHTML='تفعيل GoldHEN لجميع السوفتات من 5.05 وحتى 7.00 إلى 14.02';"
+                onmouseout="document.getElementById('msgs').innerHTML='إصدارات السوفت المدعومة';"
+                onclick="location.replace('g2all/index.html')">
+                تفعيل GoldHEN لجميع السوفتات
+            </button>
+            <p class="helper-text">اضغط على زر X في الذراع لبدء التشغيل والتعرف التلقائي على السوفت</p>
+        </div>
+
+        <div class="brand-panel">
+            <h1 class="brand-title">المنسي لخدمات البلايستيشن والموبايل</h1>
+            <div class="brand-rows">
+                <div class="info-stack">
+                    <span class="info-pill">م/ محمد المنسي</span>
+                    <span class="info-pill ltr-num">01065670546</span>
+                    <span class="info-pill">
+                        <span>أفعولة جميع السوفتات</span>
+                        <span class="status-dot"></span>
+                    </span>
+                </div>
+                <div class="service-stack">
+                    <span class="service-badge">ألعاب</span>
+                    <span class="service-badge">صيانة</span>
+                    <span class="service-badge">بيع</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-credit">تطوير وتغذية: مهندس محمد المنسي • MedoElmansy</div>
 </div>
 </body>
 </html>
