@@ -6,49 +6,107 @@
 <link rel="stylesheet" href="../style.css">
 <style>
   .g2-wrap {
+    width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    padding: 16px 24px;
+    padding: 14px 20px;
     text-align: center;
   }
   .g2-brand {
+    font-size: 30px;
+    font-weight: 900;
     color: #fbbf24;
-    font-size: 26px;
-    font-weight: 800;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
+    line-height: 1.25;
   }
-  .g2-sub {
-    color: #cbd5e1;
-    font-size: 14px;
-    margin-bottom: 12px;
+  .g2-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 14px;
   }
-  #msgs.g2-status {
-    font-size: 24px;
-    font-weight: 800;
+  .g2-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .g2-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    background: rgba(24, 28, 38, 0.92);
+    border: 1px solid rgba(251, 191, 36, 0.45);
+    color: #f8fafc;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 13px;
+    border-radius: 50px;
+  }
+  .g2-pill-gold {
     color: #fbbf24;
-    margin: 28px 0 42px 0;
-    line-height: 1.4;
   }
-  .g2-thanks {
-    font-size: 14px;
-    color: #94a3b8;
-    margin-top: 16px;
+  .g2-pill-phone {
+    color: #ffffff;
     direction: ltr;
   }
-  .g2-thanks a {
-    color: #f87171;
-    margin: 0 8px;
-    text-decoration: none;
+  .g2-dot-green {
+    width: 8px;
+    height: 8px;
+    background-color: #22c55e;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  #msgs.g2-status {
+    font-size: 22px;
+    font-weight: 800;
+    color: #fbbf24;
+    margin: 26px 0 34px 0;
+    line-height: 1.4;
+  }
+  .g2-credit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fbbf24;
+    margin-top: 10px;
   }
 </style>
 </head>
 <body>
 <div class="g2-wrap">
-  <div class="g2-brand">المنسي لخدمات البلايستيشن والموبايل</div>
-  <div class="g2-sub">GoldHEN Host (5.05 &amp; 7.00 - 14.02 FW) • م/ محمد المنسي</div>
+  <h1 class="g2-brand">المنسي لخدمات البلايستيشن والموبايل</h1>
+  <div class="g2-stack">
+    <div class="g2-row">
+      <span class="g2-pill g2-pill-gold">بيع</span>
+      <span class="g2-pill g2-pill-gold">صيانة</span>
+      <span class="g2-pill g2-pill-gold">ألعاب</span>
+    </div>
+    <div class="g2-row">
+      <span class="g2-pill g2-pill-gold">م/ محمد المنسي</span>
+      <span class="g2-pill g2-pill-phone">01065670546</span>
+    </div>
+    <div class="g2-row">
+      <span class="g2-pill g2-pill-gold">
+        <span class="g2-dot-green"></span>
+        <span>تفعيلة جميع السوفتات 7.00 - 14.02</span>
+      </span>
+    </div>
+  </div>
   <hr>
-  <h1 id="msgs" class="g2-status">جاري تحميل GoldHEN v2.4b18.14... يرجى الانتظار</h1>
-  <h2 class="g2-thanks">Special Thanks to:<a href="https://twitter.com/_AlAzif">@_AlAzif</a>ChendoChap<a href="https://x.com/Kameleonre_">@Kameleonre_</a>SiSTR0 Abc</h2>
+  <h2 id="msgs" class="g2-status">جاري تحميل GoldHEN v2.4b18.14... يرجى الانتظار</h2>
+  <div class="g2-credit">
+    <span class="g2-dot-green"></span>
+    <span>تم التعديل والتطوير بواسطة مهندس محمد المنسي</span>
+    <span class="g2-dot-green"></span>
+  </div>
 </div>
 <script>
 var uaFull = navigator.userAgent;
